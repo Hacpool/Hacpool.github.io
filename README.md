@@ -16,12 +16,17 @@ What is included:
 ## Setup
 
 - Download the miner.
+
 - Install Dependencies
-          apt-get update
-          apt-get install -y ca-certificates libssl3 ocl-icd-libopencl1
+
+apt-get update
+apt-get install -y ca-certificates libssl3 ocl-icd-libopencl1
+
 - Run commands
-  For Single Gpu   ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0
-  Rig Example      ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0,1,2,3
+- 
+For Single Gpu => ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0
+
+Rig Example    => ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0,1,2,3
 
 ## Files
 
