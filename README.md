@@ -9,19 +9,19 @@ What is included:
 - short mining guide
 - release metadata
 
-## Current public miner version
+## Dashboard
 
-- `v1.0.0`
+- https://hacpool.org/
 
-## Future versioning
+## Setup
 
-Future public miner updates should continue with incremental versions:
-
-- `v1.0.1`
-- `v1.0.2`
-- `v1.0.3`
-
-Keep file names, download links and release metadata aligned with each new version.
+- Download the miner.
+- Install Dependencies
+          apt-get update
+          apt-get install -y ca-certificates libssl3 ocl-icd-libopencl1
+- Run commands
+  For Single Gpu   ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0
+  Rig Example      ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0,1,2,3
 
 ## Files
 
