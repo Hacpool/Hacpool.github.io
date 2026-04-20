@@ -1,0 +1,26 @@
+{
+  "project": "Hacash Solo Pool Miner",
+  "current_version": "v1.0.0",
+  "release_policy": "Increment patch/minor versions for each public miner update.",
+  "releases": [
+    {
+      "version": "v1.0.0",
+      "date": "2026-04-20",
+      "channel": "public",
+      "platform": "ubuntu-nvidia",
+      "sha256": "87094cc459153a153a3188a12ce47ba9e8ff232f848e22d91ea195b1ebed36df",
+      "files": {
+        "zip": "./downloads/hacash-solo-pool-miner-v1.0.0.zip",
+        "binary": "./downloads/poolworker-v1.0.0-linux-amd64",
+        "deps_script": "./downloads/install_deps_ubuntu.sh",
+        "all_gpu_script": "./downloads/start_miner.sh",
+        "single_gpu_script": "./downloads/start_miner_single.sh"
+      },
+      "notes": [
+        "Public NVIDIA GPU miner package.",
+        "Includes start scripts and dependency installer.",
+        "Source code and pool server files are not included."
+      ]
+    }
+  ]
+}
