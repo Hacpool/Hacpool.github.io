@@ -2,31 +2,45 @@
 
 This folder is a clean GitHub Pages package for the public miner page.
 
-What is included:
+## Package Contents
 
 - simple public landing page
 - versioned miner download links
 - short mining guide
 - release metadata
 
-## Dashboard
+## Control Panel
 
-- https://hacpool.org/
+[https://hacpool.org/](https://hacpool.org/)
 
 ## Setup
 
-- Download the miner.
+1. Download the miner package.
+2. Install the required dependencies.
+3. Run the miner with your wallet and worker name.
 
-- Install Dependencies
+## Required Dependencies
 
+Run these commands on Ubuntu:
+
+```bash
 apt-get update
 apt-get install -y ca-certificates libssl3 ocl-icd-libopencl1
+```
 
-- Run commands
-- 
-For Single Gpu => ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0
+## Run Commands
 
-Rig Example    => ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0,1,2,3
+### Single GPU
+
+```bash
+./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0
+```
+
+### Multiple GPUs Example
+
+```bash
+./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 0,1,2,3
+```
 
 ## Files
 
@@ -36,19 +50,18 @@ Rig Example    => ./poolworker --wallet YOUR_WALLET --worker Worker_Name --gpus 
 - `releases.json`
 - `downloads/`
 
-## Downloads published in this package
+## Published Downloads In This Package
 
 - `hacash-solo-pool-miner-v1.0.0.zip`
 - `poolworker-v1.0.0-linux-amd64`
 
-## Publishing on GitHub Pages
+## Publishing On GitHub Pages
 
 1. Create or use a GitHub Pages repository.
 2. Upload the contents of this folder to the repository root.
-3. Enable GitHub Pages from the `main` branch root.
-4. Verify that the download links under `downloads/` resolve correctly.
+3. Enable GitHub Pages from the `main` branch.
+4. Verify that the download links under `downloads/` are served correctly.
 
 ## Notes
 
-- This page is public-facing and miner-only.
-
+This page is public and miner-only.
