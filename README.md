@@ -9,13 +9,6 @@ What is included:
 - short mining guide
 - release metadata
 
-What is intentionally not included:
-
-- source code
-- pool server binaries
-- internal deployment notes
-- operational secrets
-
 ## Current public miner version
 
 - `v1.0.0`
@@ -42,9 +35,6 @@ Keep file names, download links and release metadata aligned with each new versi
 
 - `hacash-solo-pool-miner-v1.0.0.zip`
 - `poolworker-v1.0.0-linux-amd64`
-- `install_deps_ubuntu.sh`
-- `start_miner.sh`
-- `start_miner_single.sh`
 
 ## Publishing on GitHub Pages
 
@@ -56,5 +46,4 @@ Keep file names, download links and release metadata aligned with each new versi
 ## Notes
 
 - This page is public-facing and miner-only.
-- Do not add source code or pool server files here.
-- Update `releases.json` whenever a new miner version is published.
+
